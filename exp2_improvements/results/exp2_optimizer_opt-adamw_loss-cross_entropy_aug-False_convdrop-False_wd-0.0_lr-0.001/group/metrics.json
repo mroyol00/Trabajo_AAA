@@ -1,0 +1,45 @@
+{
+  "macro_f1": 0.7028,
+  "accuracy": 0.7206,
+  "precision": 0.7585,
+  "recall": 0.7116,
+  "per_class": {
+    "cups": {
+      "precision": 0.9091,
+      "recall": 0.8333,
+      "f1-score": 0.8696,
+      "support": 12
+    },
+    "forks": {
+      "precision": 0.6667,
+      "recall": 0.9091,
+      "f1-score": 0.7692,
+      "support": 11
+    },
+    "glasses": {
+      "precision": 0.8,
+      "recall": 0.7273,
+      "f1-score": 0.7619,
+      "support": 11
+    },
+    "knives": {
+      "precision": 0.875,
+      "recall": 0.5833,
+      "f1-score": 0.7,
+      "support": 12
+    },
+    "plates": {
+      "precision": 0.55,
+      "recall": 0.9167,
+      "f1-score": 0.6875,
+      "support": 12
+    },
+    "spoons": {
+      "precision": 0.75,
+      "recall": 0.3,
+      "f1-score": 0.4286,
+      "support": 10
+    }
+  },
+  "training_time_min": 11.88
+}

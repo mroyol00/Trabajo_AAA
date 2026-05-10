@@ -1,0 +1,16 @@
+{
+  "EXPERIMENT_NAME": "exp2_optimizer",
+  "OPTIMIZER_NAME": "adamw",
+  "LOSS_NAME": "cross_entropy",
+  "USE_AUGMENTATION": false,
+  "USE_CONV_DROPOUT": false,
+  "DROPOUT_CONV_P": 0.0,
+  "DROPOUT_FC_P": 0.3,
+  "WEIGHT_DECAY": 0.0,
+  "LEARNING_RATE": 0.001,
+  "MOMENTUM": 0.9,
+  "LABEL_SMOOTHING": 0.1,
+  "FOCAL_GAMMA": 2.0,
+  "BATCH_SIZE": 16,
+  "EPOCHS": 20
+}

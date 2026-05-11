@@ -3,7 +3,7 @@ import os
 import json
 import numpy as np
 import matplotlib
-matplotlib.use("Agg")          # sin pantalla (funciona en servidor y Colab)
+matplotlib.use("Agg")          
 import matplotlib.pyplot as plt
 import torch
 

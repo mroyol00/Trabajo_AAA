@@ -14,14 +14,14 @@ from config import IMG_SIZE, BATCH_SIZE, DATASETS, CLASSES, SEED
 # Train: augmentación ligera para generalización
 TRAIN_TRANSFORMS = transforms.Compose([
     transforms.Resize((IMG_SIZE, IMG_SIZE)),
-    transforms.RandomHorizontalFlip(p=0.5),   # Efecto espejo (muy normal)
-    transforms.RandomRotation(15),            # Rotación suave de 15º (antes 30º)
+    transforms.RandomHorizontalFlip(p=0.5),   
+    transforms.RandomRotation(15),            
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.485, 0.456, 0.406],
                          std=[0.229, 0.224, 0.225]),
 ])
 
-# Val / Test: sin augmentación
+
 EVAL_TRANSFORMS = transforms.Compose([
     transforms.Resize((IMG_SIZE, IMG_SIZE)),
     transforms.ToTensor(),
@@ -31,20 +31,6 @@ EVAL_TRANSFORMS = transforms.Compose([
 
 
 def get_dataloaders(dataset_key: str):
-    """
-    Crea y devuelve los DataLoaders de train, val y test
-    para el dataset indicado por `dataset_key`.
-
-    Params
-    ------
-    dataset_key : str
-        Una de las claves en config.DATASETS:
-        'group', 'odd', 'even', 'combined', 'public'
-
-    Returns
-    -------
-    train_loader, val_loader, test_loader, class_names
-    """
     root = DATASETS[dataset_key]
 
     # Verificar que existan las carpetas

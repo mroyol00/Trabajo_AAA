@@ -1,11 +1,4 @@
-"""
-main.py — Experimento 1: Baseline CNN
-Orquesta el entrenamiento y evaluación en los 5 datasets.
 
-Uso:
-    python main.py                  # todos los datasets
-    python main.py --dataset group  # solo uno
-"""
 
 import argparse
 import os
